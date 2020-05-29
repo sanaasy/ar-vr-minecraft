@@ -1,12 +1,16 @@
-# ar-vr-minecraft
+# ⚡ ar-vr-minecraft
+a clickable minecraft interface
 
-ar-vr-minecraft.
+# how it was made
+using A-Frame
 
-Built with [A-Frame](https://aframe.io).
+# how to run it
+[check out this link to see it on your browser!]()
+## OR 
+1. ```git clone``` this repo 
+2. ```npm install```
+3. ```npm start``` in the terminal
+4. drag and move around to see the 360 view!
 
-## Setup
-
-```sh
-npm install
-npm run start
-```
+# timeline
+May 28th
