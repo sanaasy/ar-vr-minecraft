@@ -31,6 +31,17 @@
     </a-entity>
     <a-entity mixin="voxel" position="1 0 -2"></a-entity>
 
+    <!-- Vive. -->
+    <a-entity vive-controls="hand: left"></a-entity>
+    <a-entity vive-controls="hand: right"></a-entity>
+
+    <!-- Or Rift. -->
+    <a-entity oculus-touch-controls="hand: left"></a-entity>
+    <a-entity oculus-touch-controls="hand: right"></a-entity>
+
+    <a-entity id="teleHand" hand-controls="left"></a-entity>
+    <a-entity id="blockHand" hand-controls="right"></a-entity>
+
     <!-- <a-sphere random-color></a-sphere> -->
     <!-- <a-obj-model src="model.obj" random-color></a-obj-model> -->
   </a-scene>
