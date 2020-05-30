@@ -9,6 +9,7 @@
   <script type="text/javascript" src="custom.js"></script>
   <script src="components/random-color.js"></script>
   <script src="components/snap.js"></script>
+  <script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
 </head>
 
 <body>
@@ -39,8 +40,9 @@
     <a-entity oculus-touch-controls="hand: left"></a-entity>
     <a-entity oculus-touch-controls="hand: right"></a-entity>
 
-    <a-entity id="teleHand" hand-controls="left"></a-entity>
-    <a-entity id="blockHand" hand-controls="right"></a-entity>
+    <a-entity id="teleHand" hand-controls="left"
+      teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
+    <a-entity id="blockHand" hand-controls="right" laser-controls></a-entity>
 
     <!-- <a-sphere random-color></a-sphere> -->
     <!-- <a-obj-model src="model.obj" random-color></a-obj-model> -->
