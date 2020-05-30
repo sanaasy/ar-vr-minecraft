@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <title>Minecraft Demo</title>
   <meta name="description" content="ar-vr-minecraft">
-  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-  <script type="text/javascript" src="custom.js"></script>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-teleport-controls@0.2.0/dist/aframe-teleport-controls.min.js"></script>
+  <script
+    src="https://unpkg.com/aframe-controller-cursor-component@0.2.2/dist/aframe-controller-cursor-component.min.js"></script>
+  <script src="https://rawgit.com/dmarcos/aframe-motion-capture/master/dist/aframe-motion-capture.min.js"></script>
+  <script src="components/intersection-spawn.js"></script>
   <script src="components/random-color.js"></script>
   <script src="components/snap.js"></script>
-  <script src="https://unpkg.com/aframe-teleport-controls@0.2.x/dist/aframe-teleport-controls.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,12 @@
 
     <a-entity id="teleHand" hand-controls="left"
       teleport-controls="type: parabolic; collisionEntities: [mixin='voxel'], #ground"></a-entity>
-    <a-entity id="blockHand" hand-controls="right" laser-controls></a-entity>
+    <a-entity id="blockHand" hand-controls="right" laser-controls intersection-spawn="event: click; mixin: voxel">
+    </a-entity>
+
+    <a-camera>
+      <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
+    </a-camera>
 
     <!-- <a-sphere random-color></a-sphere> -->
     <!-- <a-obj-model src="model.obj" random-color></a-obj-model> -->
