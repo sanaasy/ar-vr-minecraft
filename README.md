@@ -5,7 +5,7 @@ a clickable minecraft interface
 using A-Frame
 
 # how to run it
-[check out this link to see it on your browser!]()
+[check out this link to see it on your browser!](https://sanaa-minecraft-demo.glitch.me)
 ## OR 
 1. ```git clone``` this repo 
 2. ```npm install```
@@ -13,4 +13,4 @@ using A-Frame
 4. drag and move around to see the 360 view!
 
 # timeline
-May 28th
+May 28th - May 29th
